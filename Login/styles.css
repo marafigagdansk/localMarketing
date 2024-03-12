@@ -53,7 +53,15 @@ input:focus {
 }
 
 .error-div {
-    display: none;
+    position: absolute;
+    bottom: 10px;
+    width: auto;
+    padding: 5px;
+    background-color: lightpink;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
 button{

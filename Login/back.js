@@ -19,9 +19,9 @@ function login() {
 }
 
 function closeError() {
-        document.getElementById("error-mordal").style.display = "none";
-        document.getElementById("user").style.boreder = "2px solid rgba(235, 41, 206, 0.781)";
-        document.getElementById("password").style.border = "2px solid rgba(235, 41, 206, 0.781)";
+    document.getElementById("error-mordal").style.display = "none";
+    document.getElementById("user").style.boreder = "2px solid rgba(235, 41, 206, 0.781)";
+    document.getElementById("password").style.border = "2px solid rgba(235, 41, 206, 0.781)";
 }
 
 function showPassword() {
