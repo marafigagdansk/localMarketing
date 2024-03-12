@@ -1,10 +1,10 @@
 function login() {
-    var name = $('user').val();
-    var password = $('password').val();
+    var userName = $('#user').val();
+    var password = $('#password').val();
 
-    if (name && password && name === "admin" && password === "admin") {
+    if (userName && password && userName === "admin" && password === "admin") {
         const user = {
-            name: nome,
+            name: userName,
             entryDate: new Date(),
             id: Math.floor(Math.random() * 100000),
         }
