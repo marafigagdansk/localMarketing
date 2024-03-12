@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -10,9 +11,63 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.503);
+    background-color: rgba(18, 29, 49,0.9);
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(235, 41, 206, 0.781) 0px 5px 15px;
+    background-color: rgba(18, 27, 43, 0.84);
+    color: #ffff;
+    border: 2px double rgba(235, 41, 206, 0.781);
+}
 
+input {
+    padding: 5px;
+    border: 2px solid rgba(235, 41, 206, 0.781);
+    border-radius: 10px;
+    background-color: rgba(18, 29, 49, 0.9);
+    color: #ffff;
+}
+
+input:focus {
+    box-shadow: rgba(235, 41, 206, 0.781) 0px 5px 15px;
+}
+
+.key {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: 0.6;
+}
+
+key:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.error-div {
+    display: none;
+}
+
+button{
+    padding: 5px, 15px;
+    background-color: rgba(18,27,43);
+    border: 2px double #ffff;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+button:hover {
+    opacity: 1;
+    border: 2px double rgba(235, 41, 206, 0.781);
+    box-shadow: rgba(235, 41, 206, 0.781);
+    color: #ffff;
+    cursor: pointer;
 }
