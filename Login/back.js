@@ -5,7 +5,7 @@ function login() {
     if (userName && password && userName === "admin" && password === "admin") {
         const user = {
             name: userName,
-            entryDate: new Date(),
+            entryDate: format (new Date()),
             id: Math.floor(Math.random() * 100000),
         }
 
@@ -32,4 +32,15 @@ function showPassword() {
     }else {
         inputPassword.setAttribute("type", "password");
     }
+}
+
+function format(item) {
+    var options = {
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric"
+    }
+    return item.toLocalString("pt-br", options)
 }

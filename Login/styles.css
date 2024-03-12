@@ -47,7 +47,7 @@ input:focus {
     opacity: 0.6;
 }
 
-key:hover {
+.key:hover {
     cursor: pointer;
     opacity: 1;
 }
