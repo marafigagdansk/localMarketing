@@ -5,42 +5,42 @@ function login() {
     if (userName && password && userName === "admin" && password === "admin") {
         const user = {
             name: userName,
-            entryDate: format (new Date()),
+            entryDate: format(new Date()),
             id: Math.floor(Math.random() * 100000),
         }
 
         localStorage.setItem("user", JSON.stringify(user));
         window.location.href = "../Store";
-    }else {
-        document.getElementById("error-mordal").style.display = "flex";
-        document.getElementById("user").style.boreder = "2px solid red";
+    }else{
+        document.getElementById("error-modal").style.display = "flex";
+        document.getElementById("user").style.border = "2px solid red";
         document.getElementById("password").style.border = "2px solid red";
     }
 }
 
-function closeError() {
-    document.getElementById("error-mordal").style.display = "none";
-    document.getElementById("user").style.boreder = "2px solid rgba(235, 41, 206, 0.781)";
+function closeError(){
+    document.getElementById("error-modal").style.display = "none";
+    document.getElementById("user").style.border = "2px solid rgba(235, 41, 206, 0.781)";
     document.getElementById("password").style.border = "2px solid rgba(235, 41, 206, 0.781)";
 }
 
-function showPassword() {
-    var inputPassword = document.querySelector("#password");
+function showPassword(){
+    var inputPassword = document.querySelector('#password');
 
-    if (inputPassword.getAttribute("type") === "password"){
+    if(inputPassword.getAttribute("type") === "password"){
         inputPassword.setAttribute("type", "text");
-    }else {
+    }else{
         inputPassword.setAttribute("type", "password");
     }
 }
 
-function format(item) {
+function format(item){
     var options = {
         month: "numeric",
         day: "numeric",
         hour: "numeric",
         minute: "numeric",
-        second: "numeric"
+        second: "numeric",
     }
-    return item.toLocalString("pt-br", options)
+    return item.toLocaleString("pt-BR", options)
 }
