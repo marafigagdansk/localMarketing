@@ -5,9 +5,42 @@
 }
 
 body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
     padding: 2em;
-    background-image: url("../imgs/background.jpg");
+    background-image: url(../imgs/background.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed ;
     background-size:cover ;
+
+}
+
+.idPerfil {
+    display: flex;
+    gap: 5px;
+    color: #ffff;
+}
+
+.title {
+    color: rgba(235, 41, 206, 0.781);
+}
+
+.para {
+    color: rgba(255, 255, 255, 0.788);
+}
+
+#user {
+    color: rgba(255, 238, 0, 0.911);
+}
+
+#perfil {
+    color: rgba(235, 41, 206, 0.781);
+}
+
+@media (width <=900px) {
+    .center {
+        justify-content: center;
+        gap: 2vh;
+    }
 }
